@@ -1,0 +1,163 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 300px;
+    height: 515px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    width: 250px;
+    margin-top: 20px;
+}
+
+.content {
+    margin-left: 20px;
+}
+
+.content p {
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.content h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 260px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 7px;
+}
+
+.price {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+.tag {
+    align-items: center;
+}
+
+.tag img {
+    width: 9px;
+}
+
+.tag span {
+    color: hsl(178, 100%, 50%);
+    font-size: 12px;
+    text-align: center;
+    margin-left: 1px;
+    font-weight: 600;
+}
+
+.tag2 img {
+    width: 13px;
+}
+
+.tag2 {
+    margin-left: 90px;
+}
+
+.tag2 span {
+    font-size: 13px;
+    color: hsl(215, 51%, 70%);
+    margin-left: 1px;
+}
+
+
+/* creator section */
+
+.creator {
+    display: flex;
+    color: white;
+    margin-top: 3px;
+    font-size: 13px;
+}
+
+.creator p {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.creator-img img {
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.creator span {
+    color: hsl(215, 51%, 70%);
+    text-align: center;
+}
+
+
+/* this is an overlay of another image */
+
+.overlay img {
+    color: white;
+    width: 50px;
+    margin: 98px 0 0 105px;
+}
+
+.overlay {
+    position: absolute;
+    top: 7%;
+    bottom: 0;
+    left: 6%;
+    right: 0;
+    height: 91%;
+    width: 88%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 7px;
+}
+
+
+/* Hover section */
+
+.image-container:hover .overlay {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.content h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.creator a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.view-icon:hover {
+    color: red;
+}
